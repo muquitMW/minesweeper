@@ -1,4 +1,12 @@
 function createGame_Minimum(mnum,grsz,esz)
+% Calculates number of mines in neighboring 3x3 grids for each grid
+%input
+%mnum: Number of mines 
+%grsz: N, where the total Number of grids is NxN 
+%esz:  Length of each grid (pixel)
+%Output
+%None
+
 hF      = figure('Position',[50 100 1.2*grsz*(esz+1) 1.2*grsz*(esz+1)],'numbertitle','off','Name',['(',num2str(mnum),')']);%最初はFigureを作ります
 pnlL    = [grsz*(esz+1)+3 grsz*(esz+1)+2];%Figureに付けるパネルの長さ計算
 pnlS    = [(hF.Position(3) - pnlL(1))/2 (hF.Position(4) - pnlL(2))/2];%Figureにつけるパネルの幅を計算

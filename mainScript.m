@@ -1,6 +1,7 @@
-%% Game creation
-%createGame(7,7);
-%createGame(30,21);
+%% Define Input
+NumMines = 10;%Number of mines
+NumGrids = 10;%N, where the total Number of grids is NxN 
+GridLen  = 30;% Length of each grid (pixel)
 
-%createGame_Minimum(7,7,30);
-%createGame_Minimum(30,21,30);
+%% Main
+createGame_Minimum(10,10,30);
